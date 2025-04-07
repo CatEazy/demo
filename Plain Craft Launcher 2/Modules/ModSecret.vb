@@ -196,10 +196,11 @@ Friend Module ModSecret
     Public ThemeNow As Integer = -1
     Public ColorHue As Integer = 210, ColorSat As Integer = 85, ColorLightAdjust As Integer = 0, ColorHueTopbarDelta As Object = 0
     Public ThemeDontClick As Integer = 0
+    Public NewTheme As Integer = -1
 
-    ' Public Sub ThemeRefresh(Optional NewTheme As Integer = -1)
-    '     Hint("该版本中不包含主题功能……")
-    ' End Sub
+    Public Sub ThemeRefresh(Optional NewTheme As Integer = -1)
+        ' Hint("该版本中不包含主题功能……")
+    End Sub
     Public Sub ThemeRefreshMain()
         RunInUi(
         Sub()
