@@ -1,11 +1,11 @@
 ﻿Public Class PageLaunchRight
     Implements IRefreshable
 
-'     Private Sub Init() Handles Me.Loaded
-'         PanBack.ScrollToHome()
-'         PanScroll = PanBack '不知道为啥不能在 XAML 设置
-'         PanLog.Visibility = If(ModeDebug, Visibility.Visible, Visibility.Collapsed)
-'         '快照版提示
+    Private Sub Init() Handles Me.Loaded
+        PanBack.ScrollToHome()
+        PanScroll = PanBack '不知道为啥不能在 XAML 设置
+        PanLog.Visibility = If(ModeDebug, Visibility.Visible, Visibility.Collapsed)
+        '快照版提示
 ' #If BETA Then
 '         PanHint.Visibility = Visibility.Collapsed
 ' #Else
@@ -15,12 +15,12 @@
 ' #End If
     End Sub
 
-'     '暂时关闭快照版提示
-' #If Not BETA Then
-'     Private Sub BtnHintClose_Click(sender As Object, e As EventArgs) Handles BtnHintClose.Click
-'         AniDispose(PanHint, True)
-'     End Sub
-' #End If
+    '暂时关闭快照版提示
+#If Not BETA Then
+    Private Sub BtnHintClose_Click(sender As Object, e As EventArgs) Handles BtnHintClose.Click
+        AniDispose(PanHint, True)
+    End Sub
+#End If
 
 #Region "自定义主页"
 
