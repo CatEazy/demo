@@ -106,7 +106,7 @@ WaitRetry:
             ToolTipService.VerticalOffsetProperty.OverrideMetadata(GetType(DependencyObject), New FrameworkPropertyMetadata(4.0))
             '设置初始窗口
             If Setup.Get("UiLauncherLogo") Then
-                FrmStart = New SplashScreen("Images\icon.ico")
+                FrmStart = New SplashScreen("Images\Blocks\egg.png")
                 FrmStart.Show(False, True)
             End If
             '动态 DLL 调用
